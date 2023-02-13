@@ -75,7 +75,10 @@ const exportFromNotion = async (destination, format) => {
     url: exportURL,
     responseType: `stream`,
   });
-
+   
+  
+  
+  
   const size = response.headers["content-length"];
   console.log(`Downloading ${round(size / 1000 / 1000)}mb...`);
 
